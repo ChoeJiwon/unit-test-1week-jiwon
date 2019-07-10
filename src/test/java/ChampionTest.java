@@ -113,6 +113,7 @@ public class ChampionTest {
 //        List<String> champListNames = Arrays.asList("루시안", "애쉬", "렉사이", "갈리오", "모르가느", "블라디미르");
         List<String> champListNames = Arrays.asList("조이", "티모", "아이번", "애쉬", "징크스", "카밀");
         assertThat(champListNames.get(3), hasToString("애쉬"));
+        assertThat(champListNames.get(3), containsString("애"));
         assertThat(champListNames, hasItem("애쉬"));
     }
 
